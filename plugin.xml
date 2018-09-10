@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-x-socialsharing"
+        id="cordova-plugin-x-socialsharing-fork"
         version="5.4.1">
 
   <name>SocialSharing</name>
@@ -17,9 +17,9 @@
 
   <keywords>Social, Share, Twitter, Facebook, Email, SMS, WhatsApp, Tumblr, Pocket, LinkedIn</keywords>
 
-  <repo>https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git</repo>
+  <repo>https://github.com/spasma/SocialSharing-PhoneGap-Plugin.git</repo>
 
-  <issue>https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/issues</issue>
+  <issue>https://github.com/spasma/SocialSharing-PhoneGap-Plugin/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -39,14 +39,6 @@
         <param name="ios-package" value="SocialSharing"/>
         <param name="onload" value="true" />
       </feature>
-    </config-file>
-
-    <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
-      <string>This app requires photo library access to function properly.</string>
-    </config-file>
-
-    <config-file target ="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-      <string>This app requires photo library access to function properly.</string>
     </config-file>
 
     <header-file src="src/ios/NSString+SSURLEncoding.h"/>
